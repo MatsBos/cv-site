@@ -1,0 +1,53 @@
+[data-inviewport="slide-in-right"] {
+    transition: 500ms;
+    transform: translateX(100px);
+}
+
+[data-inviewport="slide-in-right"].is-inViewport {
+    transform: translateX(0px);
+
+}
+
+[data-inviewport="slide-in-left"] {
+    transition: 500ms;
+    transform: translateX(-100px);
+}
+
+[data-inviewport="slide-in-left"].is-inViewport {
+    transform: translateX(0px);
+
+}
+
+[data-inviewport="slide-in-right-big"] {
+    transition: 800ms;
+    opacity: 0;
+    transform: translateX(200px);
+
+}
+
+[data-inviewport="slide-in-right-big"].is-inViewport {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+[data-inviewport="slide-in-left-big"] {
+    transition: 800ms;
+    opacity: 0;
+    transform: translateX(-200px);
+}
+
+[data-inviewport="slide-in-left-big"].is-inViewport {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+
+[data-inviewport="slide-progress-bar"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar;
+}
+
+@keyframes progressBar {
+    0% { width: 0; }
+    100% { width: 88%; }
+  }
