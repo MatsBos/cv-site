@@ -1942,10 +1942,6 @@ video {
   background-image: url('./src/assets/images/dark.jpg');
 }
 
-.bg-\[url\(\'\/src\/assets\/images\/dark\.jpg\'\)\] {
-  background-image: url('/src/assets/images/dark.jpg');
-}
-
 .from-my-red {
   --tw-gradient-from: #ff626c;
   --tw-gradient-to: rgb(255 98 108 / 0);
