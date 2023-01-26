@@ -41,13 +41,194 @@
     opacity: 1;
 }
 
-
-[data-inviewport="slide-progress-bar"].is-inViewport {
+[data-inviewport="slide-progress-bar-5"].is-inViewport {
     animation-duration: 1s;
-    animation-name: progressBar;
+    animation-name: progressBar-5;
 }
 
-@keyframes progressBar {
+@keyframes progressBar-5   {
     0% { width: 0; }
-    100% { width: 88%; }
-  }
+    100% { width: 5%; }
+}
+
+[data-inviewport="slide-progress-bar-10"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-10;
+}
+
+@keyframes progressBar-10   {
+    0% { width: 0; }
+    100% { width: 10%; }
+}
+
+[data-inviewport="slide-progress-bar-15"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-15;
+}
+
+@keyframes progressBar-15   {
+    0% { width: 0; }
+    100% { width: 15%; }
+}
+[data-inviewport="slide-progress-bar-20"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-20;
+}
+
+@keyframes progressBar-20   {
+    0% { width: 0; }
+    100% { width: 20%; }
+}
+[data-inviewport="slide-progress-bar-25"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-25;
+}
+
+@keyframes progressBar-25   {
+    0% { width: 0; }
+    100% { width: 25%; }
+}
+[data-inviewport="slide-progress-bar-30"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-30;
+}
+
+@keyframes progressBar-30  {
+    0% { width: 0; }
+    100% { width: 30%; }
+}
+[data-inviewport="slide-progress-bar-35"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-35;
+}
+
+@keyframes progressBar-35   {
+    0% { width: 0; }
+    100% { width: 35%; }
+}
+
+[data-inviewport="slide-progress-bar-40"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-40;
+}
+
+@keyframes progressBar-40   {
+    0% { width: 0; }
+    100% { width: 40%; }
+}
+[data-inviewport="slide-progress-bar-45"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-45;
+}
+
+@keyframes progressBar-45   {
+    0% { width: 0; }
+    100% { width: 45%; }
+}
+[data-inviewport="slide-progress-bar-50"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-50;
+}
+
+@keyframes progressBar-50  {
+    0% { width: 0; }
+    100% { width: 50%; }
+}
+[data-inviewport="slide-progress-bar-55"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-50;
+}
+
+@keyframes progressBar-55   {
+    0% { width: 0; }
+    100% { width: 55%; }
+}
+[data-inviewport="slide-progress-bar-60"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-60;
+}
+
+@keyframes progressBar-60   {
+    0% { width: 0; }
+    100% { width: 60%; }
+}
+[data-inviewport="slide-progress-bar-65"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-65;
+}
+
+@keyframes progressBar-65   {
+    0% { width: 0; }
+    100% { width: 65%; }
+}
+[data-inviewport="slide-progress-bar-70"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-70;
+}
+
+@keyframes progressBar-70 {
+    0% { width: 0; }
+    100% { width: 70%; }
+}
+
+[data-inviewport="slide-progress-bar-75"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-75;
+}
+
+@keyframes progressBar-5   {
+    0% { width: 0; }
+    100% { width: 75%; }
+}
+
+[data-inviewport="slide-progress-bar-80"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-80;
+}
+
+@keyframes progressBar-80 {
+    0% { width: 0; }
+    100% { width: 80%; }
+}
+
+[data-inviewport="slide-progress-bar-85"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-85;
+}
+
+@keyframes progressBar-85   {
+    0% { width: 0; }
+    100% { width: 85%; }
+}
+
+
+[data-inviewport="slide-progress-bar-90"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-90;
+}
+
+@keyframes progressBar-90  {
+    0% { width: 0; }
+    100% { width: 90%; }
+}
+
+
+[data-inviewport="slide-progress-bar-95"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-95;
+}
+
+@keyframes progressBar-95   {
+    0% { width: 0; }
+    100% { width: 95%; }
+}
+
+[data-inviewport="slide-progress-bar-100"].is-inViewport {
+    animation-duration: 1s;
+    animation-name: progressBar-100;
+}
+
+@keyframes progressBar-100   {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
