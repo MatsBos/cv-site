@@ -1938,8 +1938,8 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\'\/src\/assets\/images\/dark\.jpg\'\)\] {
-  background-image: url('/src/assets/images/dark.jpg');
+.bg-\[url\(\'\.\/src\/assets\/images\/dark\.jpg\'\)\] {
+  background-image: url('./src/assets/images/dark.jpg');
 }
 
 .from-my-red {
