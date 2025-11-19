@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, signal } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, signal } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,13 +6,23 @@ import { Component, ElementRef, OnInit, signal } from '@angular/core';
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
-export class Home implements OnInit {
+export class Home implements AfterViewInit {
   constructor(private el: ElementRef) {}
 
   isMenuOpen = signal(false);
 
-  ngOnInit(): void {
-    // Intersection observer
+  ngAfterViewInit(): void {
+    this.setupIntersectionObserver();
+
+    // Optional: detect DOM changes and re-observe
+    const mutationObserver = new MutationObserver(() => {
+      this.setupIntersectionObserver();
+    });
+
+    mutationObserver.observe(this.el.nativeElement, { childList: true, subtree: true });
+  }
+
+  private setupIntersectionObserver() {
     const inViewport = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         entry.target.classList.toggle('is-inViewport', entry.isIntersecting);

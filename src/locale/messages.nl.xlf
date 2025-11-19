@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="2821179408673282599" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1754880831616711419" datatype="html">
+        <source>Opleiding</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">78,80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6787233288744420298" datatype="html">
+        <source>Professionele ervaring</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3300521529982880244" datatype="html">
+        <source>Aanvullende ervaring</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">87,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1202543334420033340" datatype="html">
+        <source>Vaardigheden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4342625008558026850" datatype="html">
+        <source>Skills</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">92,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7566030244828609669" datatype="html">
+        <source> systeem en netwerk beheerder - software developer </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="951684636462607031" datatype="html">
+        <source> Een zeer enthousiaste en gedreven netwerkbeheerder/software developer die graag eens uit zijn comfortzone stapt. Heeft ervaring met .NET, Angular en Google Cloud. In mijn vrije tijd verdiep ik me in andere technologieën zoals PocketBase en Flutter. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">147,149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="368265145742381171" datatype="html">
+        <source> Immaculata Oostmalle - IT en netwerken </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8532648578604212389" datatype="html">
+        <source> Geslaagd met grote onderscheiding </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6379704561082331639" datatype="html">
+        <source> Karel de Grote Hogeschool - bachelor Toegepaste Informatica </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">202</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1146135806170249095" datatype="html">
+        <source>2019 - 2023</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1080571192282110302" datatype="html">
+        <source> Geslaagd met onderscheiding </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">209</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6192741304401687386" datatype="html">
+        <source> Professionele ervaring </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">221</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3346767719469337591" datatype="html">
+        <source> Student Programmer - District Three </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">238</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2557788925808862140" datatype="html">
+        <source>2019 - 2022</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">242</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3495842955257112657" datatype="html">
+        <source> Bij Disctrict Three werkte ik als full stack developer aan verscheidene web/mobile apps met het Angular/Ionic Framework. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">245,246</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5077803526317191948" datatype="html">
+        <source> Junior software developer - EMG Belgium <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span
+                                    class=&quot;mr-2 ml-3 rounded bg-blue-100 from-my-red via-my-pink to-my-purple px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-linear-to-r dark:text-white&quot;&gt;"/>Present<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">261,265</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4073330540709065318" datatype="html">
+        <source>2023 - heden </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6652079174893551764" datatype="html">
+        <source> Bij EMG Belgium ben ik een software developer, we werken vooral met .NET en WPF. Ook ben ik een graphics operator bij live uitzendingen zoals Tour de France, de Ronde van Vlaanderen, etc. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">272,273</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3981772241925243347" datatype="html">
+        <source> Aanvullende ervaring </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">287</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4605713045890527053" datatype="html">
+        <source> Leerkracht - Circusateljee Spelati </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">304</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6258062529452812340" datatype="html">
+        <source>2018 - 2023</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">308</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8428127194910433184" datatype="html">
+        <source> Bij Circusateljee Spelati gaf ik elke zaterdag en dinsdag circusles aan kinderen van 8 tot 15 jaar oud. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">311,312</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4501840986946352571" datatype="html">
+        <source> Voorzitter - Jeugdhuis Babylon <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span
+                                    class=&quot;mr-2 ml-3 rounded bg-blue-100 from-my-red via-my-pink to-my-purple px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-linear-to-r dark:text-white&quot;&gt;"/>Present<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">327,330</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6759178721599646794" datatype="html">
+        <source>2022 - present</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">333</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4302338823958625491" datatype="html">
+        <source> Bestuurslid bij Jeugdhuis Babylon en sinds 2023 ook voorzitter. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">336</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="454695991985092738" datatype="html">
+        <source> Vaardigheden </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">350</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
