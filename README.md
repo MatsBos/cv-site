@@ -3,5 +3,5 @@
 ## Development
 
 ```
-ng deploy --base-href=/cv-site/ --cname=matsbos.be
+ng deploy --cname=resume.matsbos.be
 ```
