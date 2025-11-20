@@ -1,4 +1,4 @@
-<div class="min-h-full">
+<div class="min-h-full" *transloco="let t">
     <nav class="bg-linear-to-r from-my-red via-my-pink to-my-purple">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
@@ -11,31 +11,31 @@
                 <div class="hidden lg:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="#home"
+                        <!-- <a href="#home"
                             class="rounded-md bg-linear-to-r from-cyan-500 to-blue-500 px-3 py-2 text-sm font-medium text-white"
-                            aria-current="page" i18n>Home</a>
+                            aria-current="page">Home</a> -->
 
                         <a href="#education"
-                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-gray-600 hover:text-white"
-                            i18n>Opleiding</a>
+                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-gray-600 hover:text-white">{{
+                            t('education.title') }}</a>
 
                         <a href="#prof"
-                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-gray-600 hover:text-white"
-                            i18n>Professionele
-                            ervaring</a>
+                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-gray-600 hover:text-white">{{
+                            t('professional-experience.title') }}</a>
 
                         <a href="#additional"
-                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-gray-600 hover:text-white"
-                            i18n>Aanvullende
-                            ervaring</a>
+                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-gray-600 hover:text-white">{{
+                            t('additional-experience.title') }}</a>
 
                         <a href="#skills"
-                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-gray-600 hover:text-white"
-                            i18n>Vaardigheden</a>
+                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-100 hover:bg-gray-600 hover:text-white">{{
+                            t('skills.title') }}</a>
+                        <app-language-switcher class="ml-8"></app-language-switcher>
                     </div>
+
                 </div>
 
-                <div class="-mr-2 flex lg:hidden">
+                <div class="-mr-2 flex lg:hidden items-center">
                     <!-- Mobile menu button -->
                     <button type="button" (click)="toggleMenu()"
                         class="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 opacity-80 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -68,46 +68,43 @@
         <!-- Mobile menu, show/hide based on menu state. -->
         <div class="hidden lg:hidden" [class.hidden]="!isMenuOpen()">
             <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3 ">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#home"
-                    class="block rounded-md bg-linear-to-r from-cyan-500 to-blue-500 px-3 py-2 text-base font-medium text-white"
-                    aria-current="page" i18n>Home</a>
-
                 <a href="#education"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white"
-                    i18n>Opleiding</a>
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">{{
+                    t('education.title') }}</a>
 
                 <a href="#prof"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white"
-                    i18n>Professionele
-                    ervaring</a>
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">{{
+                    t('professional-experience.title') }}</a>
 
                 <a href="#additional"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white"
-                    i18n>Aanvullende
-                    ervaring</a>
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">{{
+                    t('additional-experience.title') }}</a>
 
                 <a href="#skills"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white"
-                    i18n>Skills</a>
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">Skills
+                </a>
+
+                <div class="flex justify-end">
+                    <app-language-switcher></app-language-switcher>
+                </div>
+
             </div>
         </div>
     </nav>
 
     <main>
-        <div id="home" class="overflow-hidden my-background lg:h-screen">
+        <div id="home" class="overflow-hidden my-background  lg:h-screen">
             <div class="flex h-full flex-col items-center justify-center">
                 <div class="mx-auto grid max-w-7xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:px-16 lg:py-16 xl:gap-0">
                     <div data-inviewport="slide-in-left-big"
-                        class="mr-auto place-self-center lg:col-span-8 backdrop-blur-md p-4 rounded-md">
+                        class="mr-auto place-self-center lg:col-span-8 backdrop-blur-md p-4 rounded-xl box">
                         <h1
                             class="mb-2 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
                             Mats Bos
                         </h1>
 
-                        <p class="max-w-2xl mb-1 font-bold text-gray-500 dark:text-cyan-400 md:text-lg lg:text-xl" i18n>
-                            systeem en netwerk beheerder - software developer
-                        </p>
+                        <p class="max-w-2xl mb-1 font-bold text-gray-500 dark:text-cyan-400 md:text-lg lg:text-xl">
+                            {{ t('intro.job-title') }} </p>
 
                         <div
                             class="flex flex-col sm:flex-row flex-nowrap dark:text-gray-200 text-xs mb-6 lg:mb-20 gap-1 pt-2 sm:pt-0 sm:gap-4">
@@ -142,12 +139,9 @@
                             </div>
                         </div>
 
-                        <p class="md:text-md mb-5 max-w-2xl align-middle font-bold text-gray-500 dark:text-white lg:text-xl"
-                            i18n>
-                            Een zeer enthousiaste en gedreven netwerkbeheerder/software developer die graag eens uit
-                            zijn comfortzone stapt. Heeft ervaring met .NET, Angular en Google Cloud. In mijn vrije
-                            tijd
-                            verdiep ik me in andere technologieën zoals PocketBase en Flutter.
+                        <p
+                            class="md:text-md mb-5 max-w-2xl align-middle font-bold text-gray-500 dark:text-white lg:text-xl">
+                            {{ t('intro.text') }}
                         </p>
                     </div>
                     <div data-inviewport="slide-in-right-big"
@@ -159,10 +153,10 @@
         </div>
 
         <div id="education"
-            class="mx-auto flex max-w-7xl flex-col items-center justify-center overflow-hidden px-8 py-8 lg:gap-8 xl:gap-0">
+            class="mx-auto flex max-w-4xl flex-col items-center justify-center overflow-hidden px-8 py-8 lg:gap-8 xl:gap-0">
             <div class="mb-4 max-w-3xl">
                 <h2 class="mb-2 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-                    Opleiding
+                    {{ t('education.title') }}
                 </h2>
                 <hr class="mx-auto my-2 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
             </div>
@@ -178,14 +172,12 @@
                                 </path>
                             </svg>
                         </span>
-                        <h3 class="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white" i18n>
-                            Immaculata Oostmalle - IT en netwerken
-                        </h3>
-                        <time class="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2013
-                            -
-                            2019</time>
-                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400" i18n>
-                            Geslaagd met grote onderscheiding
+                        <h3 class="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
+                            {{ t('education.imma.title') }} </h3>
+                        <time class="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{{
+                            t('education.imma.period') }}</time>
+                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                            {{ t('education.imma.text') }}
                         </p>
                     </div>
                     <li data-inviewport="slide-in-right" class="mb-10 ml-8">
@@ -198,15 +190,12 @@
                                 </path>
                             </svg>
                         </span>
-                        <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white" i18n>
-                            Karel de Grote Hogeschool - bachelor Toegepaste Informatica
-                        </h3>
-                        <time class="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                            i18n>2019
-                            -
-                            2023</time>
-                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400" i18n>
-                            Geslaagd met onderscheiding
+                        <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                            {{ t('education.kdg.title') }} </h3>
+                        <time class="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{{
+                            t('education.kdg.period') }}</time>
+                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                            {{ t('education.kdg.text') }}
                         </p>
                     </li>
                 </ol>
@@ -215,10 +204,10 @@
 
         <div id="prof" class="overflow-hidden my-background">
             <div
-                class="mx-auto flex max-w-7xl flex-col items-center justify-center overflow-hidden px-8 py-8 backdrop-blur-md rounded-md lg:gap-8 xl:gap-0">
+                class="mx-auto flex max-w-4xl flex-col items-center justify-center overflow-hidden px-8 py-8 backdrop-blur-md rounded-md lg:gap-8 xl:gap-0">
                 <div class="mb-4 max-w-3xl">
-                    <h2 class="mb-2 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white" i18n>
-                        Professionele ervaring
+                    <h2 class="mb-2 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                        {{ t('professional-experience.title') }}
                     </h2>
                     <hr class="mx-auto my-2 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
                 </div>
@@ -234,17 +223,14 @@
                                         d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
                                 </svg>
                             </span>
-                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white" i18n>
-                                Student Programmer - District Three
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                                {{ t('professional-experience.dt.title') }}
                             </h3>
-                            <time class="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                                i18n>2019
-                                -
-                                2022</time>
-                            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300" i18n>
-                                Bij Disctrict Three werkte ik als full stack developer aan
-                                verscheidene web/mobile apps met het Angular/Ionic
-                                Framework.
+                            <time
+                                class="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{{
+                                t('professional-experience.dt.period') }}</time>
+                            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300">
+                                {{ t('professional-experience.dt.text') }}
                             </p>
                         </li>
                         <li data-inviewport="slide-in-right" class="mb-16 ml-8">
@@ -257,21 +243,18 @@
                                         d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
                                 </svg>
                             </span>
-                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white" i18n>
-                                Junior software developer - EMG Belgium
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                                J{{ t('professional-experience.emg.title') }}
                                 <span
-                                    class="mr-2 ml-3 rounded bg-blue-100 from-my-red via-my-pink to-my-purple px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-linear-to-r dark:text-white">Present</span>
+                                    class="mr-2 rounded bg-blue-100 from-my-red via-my-pink to-my-purple px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-linear-to-r dark:text-white">Present</span>
 
                             </h3>
-                            <time class="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                                i18n>2023
-                                -
-                                heden
+                            <time
+                                class="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{{
+                                t('professional-experience.emg.period') }}
                             </time>
-                            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300" i18n>
-                                Bij EMG Belgium ben ik een software developer, we werken vooral met .NET en WPF. Ook ben
-                                ik een graphics operator bij live uitzendingen zoals Tour de France, de Ronde van
-                                Vlaanderen, etc.
+                            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300 ">
+                                {{ t('professional-experience.emg.text') }}
                             </p>
                         </li>
                     </ol>
@@ -281,10 +264,10 @@
 
         <div id="additional" class="overflow-hidden">
             <div
-                class="mx-auto flex max-w-7xl flex-col items-center justify-center overflow-hidden px-8 py-8 lg:gap-8 xl:gap-0">
+                class="mx-auto flex max-w-4xl flex-col items-center justify-center overflow-hidden px-8 py-8 lg:gap-8 xl:gap-0">
                 <div class="mb-4 max-w-3xl">
-                    <h2 class="mb-2 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white" i18n>
-                        Aanvullende ervaring
+                    <h2 class="mb-2 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                        {{ t('additional-experience.title') }}
                     </h2>
                     <hr class="mx-auto my-2 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
                 </div>
@@ -300,16 +283,14 @@
                                     </path>
                                 </svg>
                             </span>
-                            <h3 class="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white" i18n>
-                                Leerkracht - Circusateljee Spelati
+                            <h3 class="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
+                                {{ t('additional-experience.spelati.title') }}
                             </h3>
-                            <time class="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                                i18n>2018
-                                -
-                                2023</time>
-                            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300" i18n>
-                                Bij Circusateljee Spelati gaf ik elke zaterdag en dinsdag
-                                circusles aan kinderen van 8 tot 15 jaar oud.
+                            <time
+                                class="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{{
+                                t('additional-experience.spelati.period') }}</time>
+                            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300">
+                                {{ t('additional-experience.spelati.text') }}
                             </p>
                         </li>
 
@@ -323,18 +304,16 @@
                                         d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
                             </span>
-                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white" i18n>
-                                Voorzitter - Jeugdhuis Babylon
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                                {{ t('additional-experience.babab.title') }}
                                 <span
-                                    class="mr-2 ml-3 rounded bg-blue-100 from-my-red via-my-pink to-my-purple px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-linear-to-r dark:text-white">Present</span>
+                                    class="mr-2 rounded bg-blue-100 from-my-red via-my-pink to-my-purple px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-linear-to-r dark:text-white">Present</span>
                             </h3>
-                            <time class="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                                i18n>2022
-                                -
-                                present</time>
-                            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300" i18n>
-                                Bestuurslid bij Jeugdhuis Babylon en sinds 2023 ook
-                                voorzitter.
+                            <time
+                                class="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{{
+                                t('additional-experience.babab.period') }}</time>
+                            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300">
+                                {{ t('additional-experience.babab.text') }}
                             </p>
                         </li>
                     </ol>
@@ -344,14 +323,11 @@
 
         <div id="skills" class="overflow-hidden my-background">
             <div
-                class="mx-auto mb-8 flex max-w-7xl flex-col items-center justify-center overflow-hidden backdrop-blur-md px-8 py-8 lg:gap-8 xl:gap-0 bg-blur">
+                class="mx-auto mb-8 flex max-w-4xl flex-col items-center justify-center overflow-hidden backdrop-blur-md px-8 py-8 lg:gap-8 xl:gap-0 bg-blur">
                 <div class="mb-8 flex max-w-3xl flex-col items-center justify-center">
-                    <h2 class="mb-2 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white" i18n>
-                        Vaardigheden
+                    <h2 class="mb-2 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                        {{ t('skills.title') }}
                     </h2>
-                    <!-- <p class="my-2 text-lg text-gray-500">
-                        (0-3 = basic knowledge) - (3-7 = average knowledge) - (7-10 = excellent knowledge)
-                    </p> -->
 
                     <hr class="mx-auto my-2 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
                 </div>
@@ -362,14 +338,13 @@
                             <dt>
                                 <span
                                     class="text-md mr-2 mb-2 inline-flex items-center rounded-full border border-my-red bg-gray-700 px-2.5 py-1 font-medium text-white dark:bg-gray-700 dark:text-my-red"><img
-                                        class="mr-1 h-4 w-4" src="assets/images/angular.svg"
-                                        alt="Angular logo" />Angular</span>
+                                        class="mr-1 h-4 w-4" src="assets/images/angular.svg" />Angular</span>
                             </dt>
                             <dd class="mb-3 flex items-center">
                                 <div class="mr-2 h-3 w-full rounded bg-gray-200 dark:bg-gray-700">
-                                    <div data-inviewport="slide-progress-bar-90" data-width="90"
-                                        class="h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
-                                        style="width: 90%"></div>
+                                    <div data-inviewport
+                                        class="progress-bar h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
+                                        style="--target-width: 90%;"></div>
                                 </div>
                             </dd>
                         </dl>
@@ -378,14 +353,13 @@
                             <dt>
                                 <span
                                     class="text-md mt-4 mr-2 mb-2 inline-flex items-center rounded-full border border-my-red bg-gray-700 px-2.5 py-1 font-medium text-white dark:bg-gray-700 dark:text-my-red"><img
-                                        class="mr-1 h-4 w-4" src="assets/images/nestjs.svg"
-                                        alt="Angular logo" />NestJs</span>
+                                        class="mr-1 h-4 w-4" src="assets/images/nestjs.svg" />NestJs</span>
                             </dt>
                             <dd class="mb-3 flex items-center">
                                 <div class="mr-2 h-3 w-full rounded bg-gray-200 dark:bg-gray-700">
-                                    <div data-inviewport="slide-progress-bar-70"
-                                        class="h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
-                                        style="width: 70%"></div>
+                                    <div data-inviewport
+                                        class="progress-bar h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
+                                        style="--target-width: 70%;"></div>
                                 </div>
                             </dd>
                         </dl>
@@ -394,14 +368,14 @@
                             <dt>
                                 <span
                                     class="text-md mt-4 mr-2 mb-2 inline-flex items-center rounded-full border border-my-red bg-gray-700 px-2.5 py-1 font-medium text-white dark:bg-gray-700 dark:text-my-red"><img
-                                        class="mr-1 h-4 w-4" src="assets/images/english.png" alt="Angular logo"
-                                        i18n>Engels</span>
+                                        class="mr-1 h-4 w-4" src="assets/images/english.png">{{ t('skills.english')
+                                    }}</span>
                             </dt>
                             <dd class="mb-3 flex items-center">
                                 <div class="mr-2 h-3 w-full rounded bg-gray-200 dark:bg-gray-700">
-                                    <div data-inviewport="slide-progress-bar-80"
-                                        class="h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
-                                        style="width: 80%"></div>
+                                    <div data-inviewport
+                                        class="progress-bar h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
+                                        style="--target-width: 80%;"></div>
                                 </div>
                             </dd>
                         </dl>
@@ -410,14 +384,14 @@
                             <dt>
                                 <span
                                     class="text-md mt-4 mr-2 mb-2 inline-flex items-center rounded-full border border-my-red bg-gray-700 px-2.5 py-1 font-medium text-white dark:bg-gray-700 dark:text-my-red"><img
-                                        class="mr-1 h-4 w-4" src="assets/images/french.png" alt="Angular logo"
-                                        i18n>Frans</span>
+                                        class="mr-1 h-4 w-4" src="assets/images/french.png">{{ t('skills.french')
+                                    }}</span>
                             </dt>
                             <dd class="mb-3 flex items-center">
                                 <div class="mr-2 h-3 w-full rounded bg-gray-200 dark:bg-gray-700">
-                                    <div data-inviewport="slide-progress-bar-60"
-                                        class="h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
-                                        style="width: 60%"></div>
+                                    <div data-inviewport
+                                        class="progress-bar h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
+                                        style="--target-width: 60%;"></div>
                                 </div>
                             </dd>
                         </dl>
@@ -426,14 +400,14 @@
                             <dt>
                                 <span
                                     class="text-md mt-4 mr-2 mb-2 inline-flex items-center rounded-full border border-white bg-black px-2.5 py-1 font-medium text-white dark:bg-gray-700 dark:text-white"><img
-                                        class="mr-1 h-4 w-4" src="assets/images/google.png" alt="Angular logo" />Google
+                                        class="mr-1 h-4 w-4" src="assets/images/google.png" />Google
                                     Cloud</span>
                             </dt>
                             <dd class="mb-3 flex items-center">
                                 <div class="mr-2 h-3 w-full rounded bg-gray-200 dark:bg-gray-700">
-                                    <div data-inviewport="slide-progress-bar-85"
-                                        class="h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
-                                        style="width: 85%"></div>
+                                    <div data-inviewport
+                                        class="progress-bar h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
+                                        style="--target-width: 85%;"></div>
                                 </div>
                             </dd>
                         </dl>
@@ -443,14 +417,13 @@
                             <dt>
                                 <span
                                     class="-md mt-4 mr-2 mb-2 inline-flex items-center rounded-full border border-purple-600 bg-gray-700 px-2.5 py-1 font-medium text-white dark:bg-gray-700 dark:text-purple-400"><img
-                                        class="mr-1 h-4 w-4" src="assets/images/dotnet.png"
-                                        alt="Angular logo" />.NET</span>
+                                        class="mr-1 h-4 w-4" src="assets/images/dotnet.png" />.NET</span>
                             </dt>
                             <dd class="mb-3 flex items-center">
                                 <div class="mr-2 h-3 w-full rounded bg-gray-200 dark:bg-gray-700">
-                                    <div data-inviewport="slide-progress-bar-80"
-                                        class="h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
-                                        style="width: 80%"></div>
+                                    <div data-inviewport
+                                        class="progress-bar h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
+                                        style="--target-width: 80%;"></div>
                                 </div>
                             </dd>
                         </dl>
@@ -459,14 +432,13 @@
                             <dt>
                                 <span
                                     class="text-md mt-4 mr-2 mb-2 inline-flex items-center rounded-full border border-blue-400 bg-gray-700 px-2.5 py-1 font-medium text-white dark:bg-gray-700 dark:text-blue-400"><img
-                                        class="mr-1 h-4 w-4" src="assets/images/cisco.png"
-                                        alt="Angular logo" />Cisco</span>
+                                        class="mr-1 h-4 w-4" src="assets/images/cisco.png" />Cisco</span>
                             </dt>
                             <dd class="mb-3 flex items-center">
                                 <div class="mr-2 h-3 w-full rounded bg-gray-200 dark:bg-gray-700">
-                                    <div data-inviewport="slide-progress-bar-70"
-                                        class="h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
-                                        style="width: 70%"></div>
+                                    <div data-inviewport
+                                        class="progress-bar h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
+                                        style="--target-width: 70%;"></div>
                                 </div>
                             </dd>
                         </dl>
@@ -475,14 +447,13 @@
                             <dt>
                                 <span
                                     class="text-md mt-4 mr-2 mb-2 inline-flex items-center rounded-full border border-blue-300 bg-gray-700 px-2.5 py-1 font-medium text-white dark:bg-gray-700 dark:text-blue-300"><img
-                                        class="mr-1 h-4 w-4" src="assets/images/pocketbase.png"
-                                        alt="Angular logo" />Pocketbase</span>
+                                        class="mr-1 h-4 w-4" src="assets/images/pocketbase.png" />Pocketbase</span>
                             </dt>
                             <dd class="mb-3 flex items-center">
                                 <div class="mr-2 h-3 w-full rounded bg-gray-200 dark:bg-gray-700">
-                                    <div data-inviewport="slide-progress-bar-90"
-                                        class="h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
-                                        style="width: 95%"></div>
+                                    <div data-inviewport
+                                        class="progress-bar h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
+                                        style="--target-width: 90%;"></div>
                                 </div>
                             </dd>
                         </dl>
@@ -490,14 +461,13 @@
                             <dt>
                                 <span
                                     class="text-md mt-4 mr-2 mb-2 inline-flex items-center rounded-full border border-black bg-gray-700 px-2.5 py-1 font-medium text-white dark:bg-gray-700 dark:text-white"><img
-                                        class="mr-1 h-4 w-4" src="assets/images/bash.png"
-                                        alt="Angular logo" />bash/powershell</span>
+                                        class="mr-1 h-4 w-4" src="assets/images/bash.png" />bash/powershell</span>
                             </dt>
                             <dd class="mb-3 flex items-center">
                                 <div class="mr-2 h-3 w-full rounded bg-gray-200 dark:bg-gray-700">
-                                    <div data-inviewport="slide-progress-bar-70"
-                                        class="h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
-                                        style="width: 70%"></div>
+                                    <div data-inviewport
+                                        class="progress-bar h-3 rounded bg-blue-600 from-my-red via-my-pink to-my-purple dark:bg-linear-to-r"
+                                        style="--target-width: 70%;"></div>
                                 </div>
                             </dd>
                         </dl>

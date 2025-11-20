@@ -1,0 +1,50 @@
+{
+    "intro": {
+        "job-title": "systeem en netwerk beheerder - software developer",
+        "text": "Een zeer enthousiaste en gedreven netwerkbeheerder/software developer die graag eens uit zijn comfortzone stapt. Heeft ervaring met .NET, Angular en Google Cloud. In mijn vrije tijd verdiep ik me in andere technologieën zoals PocketBase en Flutter."
+    },
+    "education": {
+        "title": "Opleiding",
+        "imma": {
+            "title": "Immaculata Oostmalle - IT en netwerken",
+            "period": "2013-2019",
+            "text": "Geslaagd met grote onderscheiding"
+        },
+        "kdg": {
+            "title": "Karel de Grote Hogeschool - bachelor Toegepaste Informatica",
+            "period": "2019 - 2023",
+            "text": "Geslaagd met onderscheiding"
+        }
+    },
+    "professional-experience": {
+        "title": "Professionele ervaring",
+        "dt": {
+            "title": "Student Programmer - District Three",
+            "period": "2019 - 2022",
+            "text": "Bij Disctrict Three werkte ik als full stack developer aan verscheidene web/mobile apps met het Angular/Ionic Framework."
+        },
+        "emg": {
+            "title": "Junior software developer - EMG Belgium",
+            "period": "2023 - heden",
+            "text": "Bij EMG Belgium ben ik een software developer, we werken vooral met .NET en WPF. Ook ben ik een graphics operator bij live uitzendingen zoals Tour de France, de Ronde van Vlaanderen, etc."
+        }
+    },
+    "additional-experience": {
+        "title": "Aanvullende ervaring",
+        "spelati": {
+            "title": "Leerkracht - Circusateljee Spelati",
+            "period": "2018 - 2023",
+            "text": "Bij Circusateljee Spelati gaf ik elke zaterdag en dinsdag circusles aan kinderen van 8 tot 15 jaar oud."
+        },
+        "babab": {
+            "title": "Voorzitter - Jeugdhuis Babylon",
+            "period": "2022 - present",
+            "text": "Bestuurslid bij Jeugdhuis Babylon en sinds 2023 ook voorzitter."
+        }
+    },
+    "skills": {
+        "title": "Vaardigheden",
+        "english": "Engels",
+        "french": "Frans"
+    }
+}
