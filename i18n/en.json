@@ -1,0 +1,50 @@
+{
+    "intro": {
+        "job-title": "system and network administrator - software developer",
+        "text": "A very enthusiastic and driven network administrator/software developer who likes to step out of his comfort zone. Has experience with .NET, Angular and Google Cloud. In my free time, I like to delve into other technologies such as PocketBase and Flutter."
+    },
+    "education": {
+        "title": "Education",
+        "imma": {
+            "title": "Immaculata Oostmalle - IT and networks",
+            "period": "2013-2019",
+            "text": "Graduated with great honor"
+        },
+        "kdg": {
+            "title": "Karel de Grote University of Applied Sciences and Arts - Bachelor of Applied Computer Science",
+            "period": "2019 - 2023",
+            "text": "Graduated with honor"
+        }
+    },
+    "professional-experience": {
+        "title": "Professional experience",
+        "dt": {
+            "title": "Student Programmer - District Three",
+            "period": "2019 - 2022",
+            "text": "At District Three I worked as a full stack developer on various web/mobile apps using the Angular/Ionic Framework."
+        },
+        "emg": {
+            "title": "Junior software developer - EMG Belgium",
+            "period": "2023 - present",
+            "text": "At EMG Belgium I am a software developer, we mainly work with .NET and WPF. I am also a graphics operator for live broadcasts such as the Tour de France, the Tour of Flanders, etc."
+        }
+    },
+    "additional-experience": {
+        "title": "Additional experience",
+        "spelati": {
+            "title": "Teacher - Circus Atelier Spelati",
+            "period": "2018 - 2023",
+            "text": "At Circus Atelier Spelati, I taught circus classes every Saturday and Tuesday to children aged 8 to 15."
+        },
+        "babab": {
+            "title": "Chairman - Youth Center Babylon",
+            "period": "2022 - present",
+            "text": "Board member at Youth Center Babylon and chairman since 2023."
+        }
+    },
+    "skills": {
+        "title": "Skills",
+        "english": "English",
+        "french": "French"
+    }
+}
