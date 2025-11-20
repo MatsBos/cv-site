@@ -1,0 +1,11 @@
+<select [(ngModel)]="activeLang" (ngModelChange)="changeLang($event)" class="px-2 py-1 rounded-md border border-gray-300 bg-white text-gray-700 shadow-sm
+         focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500
+         hover:border-gray-400 transition cursor-pointer ">
+
+    @for (lang of availableLangs; track $index) {
+    <option [value]="lang.code" class="text-gray-700">
+        {{ lang.label }}
+    </option>
+    }
+
+</select>
